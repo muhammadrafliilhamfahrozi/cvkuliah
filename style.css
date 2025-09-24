@@ -1,0 +1,166 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.cv-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-top: 8px solid #007bff; 
+}
+
+
+.header-main {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-pic-container {
+    margin-right: 40px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    border: 5px solid #007bff;
+    object-fit: cover; 
+}
+
+.header-info h1 {
+    margin: 0;
+    color: #003d82;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.contact-info {
+    margin-top: 10px;
+    color: #555;
+    font-size: 1em;
+}
+
+.contact-info strong {
+    color: #333;
+}
+
+
+.content-section {
+    margin-bottom: 30px;
+}
+
+.content-section h2 {
+    font-size: 1.8em;
+    color: #003d82;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.content-section .icon {
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+
+.content-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content-section ul li {
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.content-section ul li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.content-section li strong {
+    font-size: 1.1em;
+    display: block;
+}
+
+.year {
+    float: right;
+    font-style: italic;
+    color: #777;
+}
+
+.job-description {
+    margin-top: 5px;
+    color: #666;
+}
+
+.skills-list li {
+    display: inline-block;
+    background-color: #e2eefd;
+    color: #003d82;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    border: none;
+}
+
+
+.cv-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    color: #888;
+    font-size: 0.9em;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .cv-container {
+        padding: 20px;
+    }
+
+    .header-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .header-info h1 {
+        font-size: 2em;
+    }
+
+    .year {
+        float: none;
+        display: block;
+        margin-top: 5px;
+        font-size: 0.9em;
+    }
+}
